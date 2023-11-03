@@ -127,7 +127,7 @@ class deck
                 size_t j = distribution(rng);
                 swap(shuffledDeck[i], shuffledDeck[j]);
             }
-            
+
             current = head;
             for (const card& card : shuffledDeck)
             {
@@ -143,17 +143,11 @@ class deck
 
 int main()
 {
-    // card numeric("8", "Heart");
-    // card kang("King", "Hearts");
-
-    // cout << "Num: " << numeric << endl;
-    // cout << "Face: " << kang << endl;
-
-    deck thang;
-    cout << "Deck: " << thang << endl;
-    thang.shuffle();
-    cout << "Shuffled: " << thang << endl;
-
+    
+    deck newDeck;
+    cout << "Deck: " << newDeck << endl;
+    newDeck.shuffle();
+    cout << "Shuffled: " << newDeck << endl;
 
     return 0;
 }
