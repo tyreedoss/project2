@@ -119,7 +119,7 @@ class deck
                 current = current -> next;
             }
             
-            default_random_engine rng;
+            default_random_engine rng(static_cast<unsigned int>(time(nullptr)));
             uniform_int_distribution<int> distribution(0, shuffledDeck.size() - 1);
 
             for (size_t i = 0; i < shuffledDeck.size(); i++)
